@@ -38,5 +38,5 @@ product_dict =  {'hd televisions': {'size': search.NumberField,
                            'author': search.TextField,
                            'title': search.TextField,
                            'isbn': search.TextField},
-                 'drinks': {'type': serach.TextField}
+                 'drinks': {'type': search.TextField}
                 }
