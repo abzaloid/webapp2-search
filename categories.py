@@ -22,8 +22,9 @@ from google.appengine.api import search
 
 televisions = {'name': 'hd televisions', 'children': []}
 books = {'name': 'books', 'children': []}
+drinks = {'name': 'drinks', 'children': []}
 
-ctree =  {'name': 'root', 'children': [books, televisions]}
+ctree =  {'name': 'root', 'children': [books, televisions, drinks]}
 
 # [The core fields that all products share are: product id, name, description,
 # category, category name, and price]
@@ -36,5 +37,6 @@ product_dict =  {'hd televisions': {'size': search.NumberField,
                            'pages': search.NumberField,
                            'author': search.TextField,
                            'title': search.TextField,
-                           'isbn': search.TextField}
+                           'isbn': search.TextField},
+                 'drinks': {'type': serach.TextField}
                 }
